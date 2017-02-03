@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular TreeGrid</title>
+    <link rel="stylesheet" href="./plugin/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugin/tree-grid/ng-tree-dnd.min.css">
+</head>
+<body ng-app="TreeDnDTest" ng-controller="BasicController">
+<tree-dnd
+        tree-data="tree_data"
+        tree-control="my_tree"
+        primary-key="DemographicId"
+        column-defs="col_defs"
+        expand-on="expanding_property">
+</tree-dnd>
+<script src="./plugin/angular/angular.js"></script>
+<script src="./plugin/angular/angular-route.js"></script>
+<script src="./plugin/tree-grid/ng-tree-dnd.debug.js"></script>
+<script src="basic.js"></script>
+</body>
+</html>
